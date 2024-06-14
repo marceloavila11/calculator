@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #C1272D;
+  --secondary-color: #ffffff;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --header-background: #C1272D;
+  --footer-background: #343a40;
+  --transition-duration: 0.3s;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.App-header {
+  background-color: var(--header-background);
+  padding: 40px 20px;
+  color: var(--secondary-color);
+  transition: background-color var(--transition-duration) ease-in-out;
+}
+
+.App-header h1 {
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+}
+
+.App-header p {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.calculator-container {
+  background-color: var(--secondary-color);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+  transition: all var(--transition-duration) ease-in-out;
+}
+
+footer {
+  background-color: var(--footer-background);
+  color: var(--secondary-color);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+
+.footer-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

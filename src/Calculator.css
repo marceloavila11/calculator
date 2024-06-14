@@ -1,0 +1,115 @@
+.calculator {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  color: #333333;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.calculator:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+h2 {
+  color: #C1272D;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.calls-value {
+  font-weight: bold;
+  color: #C1272D;
+  margin-left: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  appearance: none;
+  height: 10px;
+  background: #C1272D;
+  outline: none;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 2px solid #C1272D;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #C1272D;
+}
+
+.metrics {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.metrics p {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+}
+
+.metrics span {
+  color: #C1272D;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.metrics span:hover {
+  transform: scale(1.1);
+}
+
+.cost {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.total-cost {
+  color: #C1272D;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.total-cost:hover {
+  transform: scale(1.1);
+}
